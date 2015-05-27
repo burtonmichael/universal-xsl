@@ -1,0 +1,281 @@
+@import url(/css/common/nav-flags.css);
+
+nav{
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li,
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav .logo-wrap {
+	position: relative;
+}
+
+nav .logo {
+	padding: 12px 0;
+	float: left;
+	display: block;
+}
+
+nav .logo img {
+	display: block;
+}
+
+nav .menu-list {
+	padding: 10px 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -25px;
+}
+
+nav .menu-list:after {
+	clear: both;
+	width: 100%;
+	content: '';
+	display: table;
+}
+
+nav .menu-item > a {
+	display: block;
+}
+
+nav .menu-item > a.menu-item-active {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+nav .menu-item {
+	position: relative;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+nav .menu-item:first-child {
+	margin-left: 0;
+}
+
+nav .menu-item ul {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	border-width: 2px;
+	border-style: solid;
+	border-top-right-radius: 0;
+	padding: 6px;
+	background-color: #fff;
+	top: 30px;
+	width: 214px;
+	right: 0;
+}
+
+nav .nav-text {
+	vertical-align: middle;
+	line-height: 32px;
+	height: 30px;
+	padding: 0 6px;
+	font-size: 13px;
+	display: inline-block;
+}
+
+nav .nav-icon {
+	vertical-align: middle;
+	background-image: url(/images/common/options-sprite.png);
+	background-repeat: no-repeat;
+    height: 30px;
+    display: inline-block;
+}
+
+nav .nav-icon-type {
+	width: 44px;
+}
+
+nav .booking .nav-icon-type {
+	background-position: -54px 4px;
+}
+
+nav .booking p {
+	font-size: .9em;
+	font-weight: 300;
+	margin: 0 0 12px;
+}
+
+nav .booking .form-group {
+	margin-bottom: 12px;
+}
+
+nav .form-group input {
+	font-size: .9em;
+	width: 100%;
+	height: 26px;
+	padding: 2px 4px;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #90909F;
+}
+
+nav .booking .button {
+	width: 100%;
+	border-width: 0;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+nav .language .nav-icon-type {
+	position: relative;
+	background-image: none;
+}
+
+nav .language ul li a {
+	line-height: 24px;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 1px;
+	padding: 2px 4px;
+}
+
+nav .language ul li a:hover {
+	background-color: #E8E8E8;
+}
+
+nav .language ul li a span {
+	margin-right: 6px;
+}
+
+nav .nav-icon .icon-flag {
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	left: 50%;
+	margin-left: -12px;
+}
+
+nav .nav-icon-arrow {
+	width: 26px;
+	background-position: -116px 4px;
+}
+
+nav .hamburger {
+	display: none;
+	padding: 12px 24px;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	right: 0;
+	cursor: pointer;
+}
+
+nav .hamburger .line {
+	width: 24px;
+	border-bottom: 3px solid #444;
+	margin-top: 4px;
+}
+
+nav .hamburger .line:first-child {
+	margin-top: 0;
+}
+
+footer {
+	background-color: #EEEEEE;
+	border-top: 1px solid #E6E6E6;
+}
+
+footer .norton {
+	margin: 24px 0;
+	direction: rtl;
+}
+
+footer .norton img {
+	display: block;
+	height: 65px;
+	width: auto;
+}
+
+@media (min-width: 769px) {
+
+	nav .menu-list {
+		display: block !important;
+	}
+
+}
+
+@media (max-width: 768px) {
+	nav{
+		box-shadow: none;
+	}
+	nav .header {
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	nav .hamburger {
+		display: block;
+	}
+	nav .logo {
+		float: none;
+		width: 90%;
+		width: calc(100% - 76px);
+	}
+	nav .logo img {
+		margin-left: 8px;
+		max-width: 200px;
+	}
+	nav .menu-item ul {
+		top: 30px;
+	}
+	nav .menu-list {
+		position: relative;
+		margin-top: 0;
+		top: auto;
+		background-image: none;
+		padding: 12px 8px 10px;
+		clear: both;
+		display: none;
+		-webkit-transition: box-shadow 400ms;
+		-moz-transition: box-shadow 400ms;
+		transition: box-shadow 400ms;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	}
+
+	nav .logo-wrap {
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	}
+
+	nav .menu-item {
+		display: block;
+		margin-left: 0;
+		width: 100%;
+		margin-top: 8px;
+	}
+	nav .menu-item:first-child {
+		margin-top: 0;
+	}
+
+	nav .menu-item ul {
+		display: block;
+		margin-left: 0;
+		width: 100%;
+	}
+	nav .menu-item > a {
+		width: 100%;
+	}
+	nav .nav-icon-arrow {
+		float: right;
+	}
+
+	.footer .norton img {
+		margin: 0 auto;
+	}
+
+	nav .menu-item ul {
+		/*border-radius: 0 0 2px 2px;*/
+	}
+}
